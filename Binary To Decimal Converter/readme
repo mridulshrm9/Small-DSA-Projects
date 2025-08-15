@@ -1,0 +1,43 @@
+## 📜 Description
+This program converts a **binary number** (entered as an integer) into its **decimal equivalent** using C++.  
+It works by reading each binary digit from right to left, multiplying it by the corresponding power of 2, and summing the results.
+
+---
+
+## 💻 Example Run
+Enter the value: 1101
+13
+
+## 🔍 Step-by-Step Conversion (Example: Binary 1101 to Decimal)
+| Step | binary | rem (`binary % 10`) | inc (2^n) | ans (`ans + rem * inc`) |
+|------|--------|---------------------|-----------|-------------------------|
+| 1    | 1101   | 1                   | 1         | 1                       |
+| 2    | 110    | 0                   | 2         | 1                       |
+| 3    | 11     | 1                   | 4         | 5                       |
+| 4    | 1      | 1                   | 8         | 13                      |
+
+**Result:** Decimal of 1101 is **13** ✅
+
+---
+
+## 🛠️ How It Works
+- **Remainder (`rem`)** → Extracts the last binary digit.
+- **`inc` variable** → Tracks the decimal place value (powers of 2).
+- **`ans` variable** → Stores the accumulated decimal value.
+- Loop continues until `binary` becomes 0.
+
+---
+
+## 📚 Skills Learned
+- Modulo and integer division operations
+- Place value calculations for base conversion
+- Basic number system logic
+- Time complexity: **O(log n)**
+
+---
+
+## 🚀 How to Run
+Compile and run the program:
+```bash
+g++ binary_to_decimal.cpp -o binary_to_decimal
+./binary_to_decimal
