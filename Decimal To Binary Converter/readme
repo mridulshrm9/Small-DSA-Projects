@@ -1,0 +1,50 @@
+# Decimal to Binary Conversion (C++)
+
+## 📜 Description
+This program converts a decimal number into its binary representation using **mathematical calculation** instead of arrays or strings.  
+It works by:
+1. Extracting the remainder when dividing by 2 (gives the binary bit).
+2. Building the binary number by multiplying with powers of 10.
+3. Printing the final binary number.
+
+
+## 💻 Example Run
+Enter the value: 13
+1101
+
+
+## 🔍 Step-by-Step Conversion (Example: 13 to Binary)
+
+| Step | num | rem (`num % 2`) | pow | ans (`ans + rem * pow`) |
+|------|-----|-----------------|-----|-------------------------|
+| 1    | 13  | 1               | 1   | 1                       |
+| 2    | 6   | 0               | 10  | 1                       |
+| 3    | 3   | 1               | 100 | 101                     |
+| 4    | 1   | 1               | 1000| 1101                    |
+
+**Result:** Binary of 13 is **1101** ✅
+
+---
+
+## 🛠️ How It Works
+- **Remainder (`rem`)** → Last binary digit.
+- **`pow` variable** → Tracks the place value in binary (1, 10, 100, ...).
+- **`ans` variable** → Accumulates the binary number.
+- Loop continues until the number becomes 0.
+
+---
+
+## 📚 Skills Learned
+- Integer division and modulo operations
+- Loop control in C++
+- Using place value (`pow`) to construct numbers
+- Time complexity: **O(log n)**
+
+---
+
+## 🚀 How to Run
+Compile and run the program:
+```bash
+
+g++ decimal_to_binary.cpp -o decimal_to_binary
+./decimal_to_binary
