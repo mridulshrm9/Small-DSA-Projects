@@ -9,11 +9,14 @@ These projects focus on core programming concepts like loops, conditionals, recu
 
 ## 📂 Project List
 
-| Project Name                 | Description                                                                        | Concepts Covered                             |
-| ---------------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------- |
-| Decimal to Binary Conversion | Converts a decimal number to binary using iterative calculation with powers of 10. | Loops, Modulo, Integer Division, Place Value |
-| Binary to Decimal Conversion | Converts a binary number (input as digits) to its decimal equivalent.              | Loops, Place Value, Powers of 2, Arithmetic  |
-| Reverse of Array             | Reverses the given array in-place using the two-pointer technique.                 | Arrays, Two Pointers, Swapping, Iteration    |
+| Project Name                          | Description                                                                                       | Concepts Covered                                      |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| Decimal to Binary Conversion          | Converts a decimal number to binary using iterative calculation with powers of 10.                | Loops, Modulo, Integer Division, Place Value          |
+| Binary to Decimal Conversion          | Converts a binary number (input as digits) to its decimal equivalent.                             | Loops, Place Value, Powers of 2, Arithmetic           |
+| Reverse of Array                      | Reverses the given array in-place using the two-pointer technique.                                | Arrays, Two Pointers, Swapping, Iteration             |
+| Array Operations                      | Perform operations like create, view, insert, delete (by value/position), and search in an array. | Arrays, Functions, Linear Search, Insertion, Deletion |
+| Binary Search (Recursive & Iterative) | Searches for an element in a sorted array using both recursive and iterative binary search.       | Arrays, Divide & Conquer, Recursion, Iteration        |
+| Matrix Operations                     | Implements matrix addition, multiplication, and transpose.                                        | 2D Arrays, Nested Loops, Matrix Arithmetic            |
 
 ---
 
@@ -27,4 +30,3 @@ These projects focus on core programming concepts like loops, conditionals, recu
 ---
 
 ✨ More projects coming soon... Stay tuned!
-
