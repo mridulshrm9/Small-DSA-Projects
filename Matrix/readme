@@ -1,0 +1,95 @@
+## 📜 Description
+
+This program implements **basic matrix operations** in C++:
+
+* **Addition** of two matrices
+* **Multiplication** of two matrices
+* **Transpose** of a matrix
+
+The user provides the dimensions and elements of matrices, and the program performs the selected operations.
+
+---
+
+## 💻 Example Run
+
+```
+Enter the values of matrix1: 
+Enter the row of matrix: 2
+Enter the column of matrix: 2
+Enter the value of element [0][0]: 1
+Enter the value of element [0][1]: 2
+Enter the value of element [1][0]: 3
+Enter the value of element [1][1]: 4
+
+Enter the values of matrix3: 
+Enter the row of matrix: 2
+Enter the column of matrix: 2
+Enter the value of element [0][0]: 1
+Enter the value of element [0][1]: 0
+Enter the value of element [1][0]: 0
+Enter the value of element [1][1]: 1
+
+Enter the values of matrix2: 
+Enter the row of matrix: 2
+Enter the column of matrix: 2
+Enter the value of element [0][0]: 5
+Enter the value of element [0][1]: 6
+Enter the value of element [1][0]: 7
+Enter the value of element [1][1]: 8
+```
+
+**Output (Addition, Multiplication, Transpose):**
+
+```
+[6][8]
+[10][12]
+
+[19][22]
+[43][50]
+
+[1][3]
+[2][4]
+```
+
+---
+
+## 🔍 Features
+
+* **Addition** → Adds two matrices of the same dimensions.
+* **Multiplication** → Multiplies two matrices if `col1 == row2`.
+* **Transpose** → Converts rows into columns of a given matrix.
+
+---
+
+## 🛠️ How It Works
+
+* **createMatrix()** → Takes user input for matrix elements.
+* **printMatrix()** → Prints matrix in grid form.
+* **addMatrix()** → Performs element-wise addition.
+* **multiplyMatrix()** → Implements matrix multiplication using triple nested loops.
+* **tranMatrix()** → Swaps rows and columns to get the transpose.
+
+---
+
+## ⏱️ Complexity
+
+* **Matrix Addition** → O(n × m)
+* **Matrix Multiplication** → O(n × m × p)
+* **Transpose** → O(n × m)
+
+---
+
+## 📚 Skills Learned
+
+* 2D array handling in C++
+* Implementing mathematical matrix operations
+* Working with nested loops
+* Understanding conditions for matrix compatibility
+
+---
+
+## 🚀 How to Run
+
+```bash
+g++ matrix_operations.cpp -o matrix_operations
+./matrix_operations
