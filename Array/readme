@@ -1,0 +1,141 @@
+## 📜 Description
+
+This program implements **basic array operations** in C++.
+It allows the user to **create, view, insert, delete, and search elements** in an array through a menu-driven interface.
+
+---
+
+## 💻 Example Run
+
+```
+Enter the operation you want to do (Select from below):
+(Create / View / Insert / Delete / Search / Exit): Create
+Enter the size of the array: 5
+Enter the size of element 1: 10
+Enter the size of element 2: 20
+Enter the size of element 3: 30
+Enter the size of element 4: 40
+Enter the size of element 5: 50
+
+(View the array)
+The value of element 1 is 10
+The value of element 2 is 20
+The value of element 3 is 30
+The value of element 4 is 40
+The value of element 5 is 50
+
+(Insert a new element)
+Enter the value of element: 99
+Enter the position of element: 3
+```
+
+---
+
+## 🔍 Features
+
+* **Create** → Input array elements
+* **View** → Print all elements
+* **Insert** → Insert an element at a specific position
+* **Delete** → Delete element by value or by position
+* **Search** → Find the index of a given value
+
+---
+
+## 🛠️ How It Works
+
+* Uses **functions** for modularity (`readArray`, `printArray`, `insertElement`, `deleteElementPOS`, `deleteElementVAL`, `indexFinder`).
+* Array size updates dynamically after insertion/deletion.
+* Deletion can be done either **by value** or **by position**.
+
+---
+
+## ⏱️ Complexity
+
+* **Insertion** → O(n)
+* **Deletion** → O(n)
+* **Search (Linear)** → O(n)
+
+---
+
+## 📚 Skills Learned
+
+* Menu-driven programs
+* Modular programming with functions
+* Array manipulation (insert, delete, search)
+
+---
+
+## 🚀 How to Run
+
+```bash
+g++ array_operations.cpp -o array_operations
+./array_operations
+```
+
+---
+
+---
+
+# 📘 README for Binary Search (Recursive & Iterative)
+
+## 📜 Description
+
+This program performs **Binary Search** in C++ using both:
+
+1. **Recursive approach**
+2. **Iterative approach**
+
+The user inputs an array (sorted in ascending order) and a target value, then the program returns the position of the target.
+
+---
+
+## 💻 Example Run
+
+```
+Enter the size of array: 5
+Enter the value of element 1: 10
+Enter the value of element 2: 20
+Enter the value of element 3: 30
+Enter the value of element 4: 40
+Enter the value of element 5: 50
+
+Enter the element you want to find: 40
+The position of your element 40 is 4 by Recursive method
+The position of your element 40 is 4 by Iterative method
+```
+
+---
+
+## 🛠️ How It Works
+
+* **Recursive Method** → Continuously divides the search range until the element is found.
+* **Iterative Method** → Uses a loop to narrow down the search range.
+* Both return the **1-based index** of the target element.
+* If the element is not found, returns `0`.
+
+---
+
+## ⏱️ Complexity
+
+* **Best Case**: O(1) (target is at mid)
+* **Worst Case**: O(log n)
+* **Space Complexity**:
+
+  * Recursive → O(log n) (function call stack)
+  * Iterative → O(1)
+
+---
+
+## 📚 Skills Learned
+
+* Binary Search algorithm (both forms)
+* Recursive vs Iterative thinking
+* Applying divide & conquer
+
+---
+
+## 🚀 How to Run
+
+```bash
+g++ binary_search.cpp -o binary_search
+./binary_search
