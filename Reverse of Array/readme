@@ -52,6 +52,4 @@ Compile and run the program:
 ```bash
 g++ reverse_array.cpp -o reverse_array
 ./reverse_array
-yaml
-Copy
-Edit
+
